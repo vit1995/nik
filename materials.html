@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>art-ps</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css?_v=20230509002749">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header ">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<div class="menu__bacraund">
+							<button type="button" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<div class="menu__logo ">
+							<img src="img/header/logo.svg" alt="logo">
+						</div>
+						<div class="menu__search">
+							<form class="menu__search-one search-input">
+								<div class="container  ">
+									<a href="#" target="_blank" hidden></a>
+									<input autocomplete="off" placeholder="Поиск" required="" class="input" name="text"
+										type="text">
+									<div class="autocom-box">
+										<!-- here list are inserted from javascript -->
+									</div>
+									<button class="icon">
+										<svg viewBox="0 0 512 512" class="ionicon" xmlns="http://www.w3.org/2000/svg">
+											<path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none"
+												d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+											<path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10"
+												stroke-linecap="round" stroke="currentColor" fill="none"></path>
+										</svg>
+									</button>
+								</div>
+							</form>
+
+							<form class="menu__search-two">
+								<div class="search search-menu">
+									<input autocomplete="off" list="browserdata" id="browser" type="text" required=""
+										class="search-menu__input" placeholder="Все для Photoshop">
+									<datalist id="browserdata">
+										<option>Все для Photoshop</option>
+										<option>Все для Видеомонтажа</option>
+										<option>Все для Дизайнера</option>
+									</datalist>
+
+
+									<button class="search-menu__button _icon-lupa">
+
+									</button>
+								</div>
+							</form>
+
+
+						</div>
+						<div class="menu__button button-menu">
+							<button type="submit" class="button-menu__button-ps">Скачать PS</button>
+							<button type="submit" class="button-menu__button-ae">Скачать AE</button>
+						</div>
+						<div class="menu__user-icon users-icon">
+							<picture>
+								<source srcset="img/foto.webp" type="image/webp"><img src="img/foto.png" alt="icon">
+							</picture>
+							<div class="users-icon__text">
+								<p class="users-icon__message">Сообщения <span>3</span></p>
+								<p class="users-icon__close">Выход </p>
+							</div>
+							</a>
+						</div>
+						<ul class="menu__list ">
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Форум
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Скоро откроем
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Заказ графики
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Устные уроки
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Видео уроки
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Конкурсы
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Вакансии
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Файлы
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									Реклама
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup ">
+			<form class="popup__wrapper">
+				<div class="popup__content">
+					<p class="popup-title">Войти</p>
+					<p class="popup-text">Через социальные сети</p>
+					<div class="popup-images">
+						<a href="#"> <img src="img/popap/01.svg" alt="vk"></a>
+						<a href="#"> <img src="img/popap/02.svg" alt="google"></a>
+					</div>
+					<div class="input-container">
+						<input class="input-open" data-error="Требуется вводить только латинские буквы" data-required="email"
+							placeholder="Адрес электронной почты">
+					</div>
+					<div class="input-container">
+						<input placeholder="Пароль" type="password">
+
+						<button class="input-container__viewpass _icon-eye"></button>
+
+					</div>
+					<button class="submit" type="submit">
+						Войти
+					</button>
+					<div class="popup__text">
+						<p class="signup-link">
+							<a href="#">Я не помню пароль</a><br>Я хочу
+							<a data-popup="#pop" href="#">Зарегестрироваться</a>
+						</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="pop" aria-hidden="true" class="popup ">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<p class="popup-title">Регистация</p>
+					<p class="popup-text">Через социальные сети</p>
+					<div class="popup-images">
+						<a href="#"> <img src="img/popap/01.svg" alt="vk"></a>
+						<a href="#"> <img src="img/popap/02.svg" alt="google"></a>
+					</div>
+					<div class="input-container">
+						<input class="input-open" data-error="Требуется вводить только латинские буквы" data-required="email"
+							placeholder="Адрес электронной почты">
+					</div>
+					<div class="input-container">
+						<input placeholder="Пароль" type="password">
+
+						<span>
+							<button><img src="img/icon/glazcloze.svg" alt=""></button>
+						</span>
+					</div>
+					<button class="submit" type="submit">
+						Войти
+					</button>
+					<div class="popup__text">
+						<p class="signup-link">
+							У меня уже есть аккаунт
+							<a href="#">Войти</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page page-iner">
+			<div class="page page-iner">
+				<nav class="page__breadcrumbs breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link">PSD материалы</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link">Превью для видео</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Красочный PSD Шаблон шапки для YouTube</span>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+				<section class="page__pattern pattern">
+					<div class="pattern__container">
+						<div class="pattern__wrappers">
+							<div class="pattern__wrapper-left">
+								<div class="pattern__body">
+									<div class="pattern__tittle">
+										Красочный PSD Шаблон шапки для YouTube
+									</div>
+									<div class="pattern__images-ibg">
+										<picture>
+											<source srcset="img/patern/01.webp" type="image/webp"><img src="img/patern/01.png"
+												alt="images">
+										</picture>
+									</div>
+									<p class="pattern__text">
+										Хочешь обновить дизайн своего канала на Youtube, мы готовы тебе в этом помочь! Возьми
+										данный
+										шаблон
+										этой красочной шапки и измени его под свой канал, файл находится в PSD формате по этому
+										труда
+										никакого не составит. Дизайн выполнен в светло-оранжевых цветах, с иконками людей из игры
+										CS GO,
+										по бокам рендеры клавиш от джойстика PS и светлым 3D текстом по середине.
+									</p>
+									<div class="pattern__mistake">
+										<p>Уважаемые пользователи, для тех у кого возникают какие либо проблемы или вопросы
+											вы всегда
+											можете <a href="#">Сообщить о проблеме</a> или же просто отблагодарить автора данного
+											материала обычной
+											репутацией нажав <a href="#">Спасибо за материал</a>, Администрация сайта.</p>
+									</div>
+									<div class="pattern__item">
+										<div class="pattern__items-rating">
+											<h2 class="pattern__rating-tittle rating-tittle">рейтинг</h2>
+											<div class="pattern__rating rating_set rating">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3</div>
+											</div>
+										</div>
+										<div class="pattern__reviews reviews-pattern">
+											<p class="reviews-pattern__tittle">Просмотры</p>
+											<div class="reviews-pattern__bottom">
+												<img class="reviews-pattern__icon" src="img/icon/Glaz.svg" alt="icon">
+												<span class="reviews-pattern__number">32</span>
+											</div>
+										</div>
+										<div class="pattern__user user-pattern">
+											<div class="user-pattern__tittle">Автор</div>
+											<div class="user-pattern__icon">
+												<img class="user-pattern__images" src="img/icon/user.svg" alt="images">
+
+												<span class="user-pattern__nik">Nik</span>
+											</div>
+										</div>
+										<div class="pattern__btn">
+											<button type="button" class="pattern__button-yellow">Скачать</button>
+										</div>
+									</div>
+									<div class="tittle-patern">
+										<h3 class="subtittle">Комментарии
+											<span class="subtittle__number">3</span>
+										</h3>
+										<div class="select select__form select-coment">
+											<select class="select-body" name="form[]" data-class-modif="form">
+												<option value="1" selected>По умолчанию</option>
+												<option value="2">Пункт №2</option>
+												<option value="3">Пункт №3</option>
+												<option value="4">Пункт №4</option>
+											</select>
+										</div>
+									</div>
+									<div class="card">
+
+										<div class="comments">
+											<div class="comment-react">
+												<button>
+													<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+														xmlns="http://www.w3.org/2000/svg">
+														<path fill="#707277" stroke-linecap="round" stroke-width="2" stroke="#707277"
+															d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z">
+														</path>
+													</svg>
+												</button>
+												<hr>
+												<span>14</span>
+											</div>
+											<div class="comment-container">
+												<div class="user">
+													<div class="user-pic-ibg">
+														<picture>
+															<source srcset="img/patern/02.webp" type="image/webp"><img
+																src="img/patern/02.png" alt="avatar">
+														</picture>
+														<!--
+														<svg fill="none" viewBox="0 0 24 24" height="20" width="20"
+															xmlns="http://www.w3.org/2000/svg">
+															<path stroke-linejoin="round" fill="#707277" stroke-linecap="round"
+																stroke-width="2" stroke="#707277"
+																d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z">
+															</path>
+															<path stroke-width="2" fill="#707277" stroke="#707277"
+																d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z">
+															</path>
+														</svg>
+														-->
+													</div>
+													<div class="user-nik">
+														<span>Lokolo</span>
+														<p class="comment-content">
+															Отличный шаблон
+														</p>
+													</div>
+												</div>
+
+												<div class="user-info">
+													<time datetime="2021-08-28T12:00:00+03:00">28.08.2021, 12:0
+													</time>
+													<a class="user-quote" href="#">Цитировать</a>
+												</div>
+											</div>
+										</div>
+										<div class="comments">
+											<div class="comment-react">
+												<button>
+													<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+														xmlns="http://www.w3.org/2000/svg">
+														<path fill="#707277" stroke-linecap="round" stroke-width="2" stroke="#707277"
+															d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z">
+														</path>
+													</svg>
+												</button>
+												<hr>
+												<span>14</span>
+											</div>
+											<div class="comment-container">
+												<div class="user">
+													<div class="user-pic-ibg">
+														<picture>
+															<source srcset="img/patern/03.webp" type="image/webp"><img
+																src="img/patern/03.png" alt="avatar">
+														</picture>
+														<!--
+														<svg fill="none" viewBox="0 0 24 24" height="20" width="20"
+															xmlns="http://www.w3.org/2000/svg">
+															<path stroke-linejoin="round" fill="#707277" stroke-linecap="round"
+																stroke-width="2" stroke="#707277"
+																d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z">
+															</path>
+															<path stroke-width="2" fill="#707277" stroke="#707277"
+																d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z">
+															</path>
+														</svg>
+														-->
+													</div>
+													<div class="user-nik">
+														<span>Maximus</span>
+														<p class="comment-content">
+															Да, тут новость прочитал, что британцы выяснили, вирус этот искусственный.
+															Его происхождение природное — он взят из летучих мышей, но у него есть
+															модификация в виде ряда из 4 положительно заряженных аминокислот, чтобы
+															лучше к человеку цеплялся. Ведь человек имеет потенциал отрицательно
+															заряженных частиц. В природе одинаковые частицы отталкиваются, поэтому
+														</p>
+													</div>
+												</div>
+
+												<div class="user-info">
+													<time datetime="2021-08-28T12:00:00+03:00">28.08.2021, 12:0
+													</time>
+													<a class="user-quote" href="#">Цитировать</a>
+												</div>
+											</div>
+										</div>
+										<div class="comments">
+											<div class="comment-react">
+												<button>
+													<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+														xmlns="http://www.w3.org/2000/svg">
+														<path fill="#707277" stroke-linecap="round" stroke-width="2" stroke="#707277"
+															d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z">
+														</path>
+													</svg>
+												</button>
+												<hr>
+												<span>14</span>
+											</div>
+											<div class="comment-container">
+												<div class="user">
+													<div class="user-pic-ibg">
+														<picture>
+															<source srcset="img/patern/05.webp" type="image/webp"><img
+																src="img/patern/05.png" alt="avatar">
+														</picture>
+														<!--
+														<svg fill="none" viewBox="0 0 24 24" height="20" width="20"
+															xmlns="http://www.w3.org/2000/svg">
+															<path stroke-linejoin="round" fill="#707277" stroke-linecap="round"
+																stroke-width="2" stroke="#707277"
+																d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z">
+															</path>
+															<path stroke-width="2" fill="#707277" stroke="#707277"
+																d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z">
+															</path>
+														</svg>
+														-->
+													</div>
+													<div class="user-nik">
+														<span>Mila</span>
+														<p class="user-answer">Цитата Lokolo, Отличный шаблон</p>
+														<p class="comment-content">
+															Полностью согласна!
+														</p>
+													</div>
+												</div>
+
+												<div class="user-info">
+													<time datetime="2021-08-28T12:00:00+03:00">28.08.2021, 12:0
+													</time>
+													<a class="user-quote" href="#">Цитировать</a>
+												</div>
+											</div>
+										</div>
+										<div class="text-box">
+											<div class="box-container">
+												<textarea placeholder="text"></textarea>
+
+												<div>
+													<div class="formatting">
+														<button type="button">
+															<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+																xmlns="http://www.w3.org/2000/svg">
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#707277"
+																	d="M5 6C5 4.58579 5 3.87868 5.43934 3.43934C5.87868 3 6.58579 3 8 3H12.5789C15.0206 3 17 5.01472 17 7.5C17 9.98528 15.0206 12 12.5789 12H5V6Z"
+																	clip-rule="evenodd" fill-rule="evenodd"></path>
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#707277"
+																	d="M12.4286 12H13.6667C16.0599 12 18 14.0147 18 16.5C18 18.9853 16.0599 21 13.6667 21H8C6.58579 21 5.87868 21 5.43934 20.5607C5 20.1213 5 19.4142 5 18V12">
+																</path>
+															</svg>
+														</button>
+														<button type="button">
+															<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+																xmlns="http://www.w3.org/2000/svg">
+																<path stroke-linecap="round" stroke-width="2.5" stroke="#707277"
+																	d="M12 4H19"></path>
+																<path stroke-linecap="round" stroke-width="2.5" stroke="#707277"
+																	d="M8 20L16 4"></path>
+																<path stroke-linecap="round" stroke-width="2.5" stroke="#707277"
+																	d="M5 20H12"></path>
+															</svg>
+														</button>
+														<button type="button">
+															<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+																xmlns="http://www.w3.org/2000/svg">
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#707277"
+																	d="M5.5 3V11.5C5.5 15.0899 8.41015 18 12 18C15.5899 18 18.5 15.0899 18.5 11.5V3">
+																</path>
+																<path stroke-linecap="round" stroke-width="2.5" stroke="#707277"
+																	d="M3 21H21"></path>
+															</svg>
+														</button>
+														<button type="button">
+															<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+																xmlns="http://www.w3.org/2000/svg">
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#707277" d="M4 12H20"></path>
+																<path stroke-linecap="round" stroke-width="2.5" stroke="#707277"
+																	d="M17.5 7.66667C17.5 5.08934 15.0376 3 12 3C8.96243 3 6.5 5.08934 6.5 7.66667C6.5 8.15279 6.55336 8.59783 6.6668 9M6 16.3333C6 18.9107 8.68629 21 12 21C15.3137 21 18 19.6667 18 16.3333C18 13.9404 16.9693 12.5782 14.9079 12">
+																</path>
+															</svg>
+														</button>
+														<button type="button">
+															<svg fill="none" viewBox="0 0 24 24" height="16" width="16"
+																xmlns="http://www.w3.org/2000/svg">
+																<circle stroke-linejoin="round" stroke-linecap="round"
+																	stroke-width="2.5" stroke="#707277" r="10" cy="12" cx="12"></circle>
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#707277"
+																	d="M8 15C8.91212 16.2144 10.3643 17 12 17C13.6357 17 15.0879 16.2144 16 15">
+																</path>
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="3"
+																	stroke="#707277" d="M8.00897 9L8 9M16 9L15.991 9"></path>
+															</svg>
+														</button>
+														<button type="submit" class="send" title="Send">
+															<svg fill="none" viewBox="0 0 24 24" height="18" width="18"
+																xmlns="http://www.w3.org/2000/svg">
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#ffffff" d="M12 5L12 20"></path>
+																<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5"
+																	stroke="#ffffff"
+																	d="M7 9L11.2929 4.70711C11.6262 4.37377 11.7929 4.20711 12 4.20711C12.2071 4.20711 12.3738 4.37377 12.7071 4.70711L17 9">
+																</path>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pattern__wrapper-right">
+								<article class="pattern__article article">
+									<div class="article__body">
+										<div class="article__images">
+											<picture>
+												<source srcset="img/article-2/01.webp" type="image/webp"><img
+													src="img/article-2/01.png" alt="images">
+											</picture>
+										</div>
+										<h2 class="article__tittle">
+											Темная шапка для Youtube в формате PSD
+										</h2>
+										<div class="article__footer">
+											<div class="article__wrapper-rating">
+												<h3 class="rating-tittle">Рейтинг</h3>
+												<div class="article__rating rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">3</div>
+												</div>
+											</div>
+											<div class="article__button">
+												<button type="button" class="article__btn btn-firm">Подробнее</button>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="pattern__article article">
+									<div class="article__body">
+										<div class="article__images">
+											<picture>
+												<source srcset="img/article-2/02.webp" type="image/webp"><img
+													src="img/article-2/02.png" alt="images">
+											</picture>
+										</div>
+										<h2 class="article__tittle">
+											Темная шапка для Youtube в формате PSD
+										</h2>
+										<div class="article__footer">
+											<div class="article__wrapper-rating">
+												<h3 class="rating-tittle">Рейтинг</h3>
+												<div class="article__rating rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">3</div>
+												</div>
+											</div>
+											<div class="article__button">
+												<button type="button" class="btn-firm">Подробнее</button>
+											</div>
+										</div>
+									</div>
+
+								</article>
+								<article class="pattern__article article">
+									<div class="article__body">
+										<div class="article__images">
+											<picture>
+												<source srcset="img/article-2/03.webp" type="image/webp"><img
+													src="img/article-2/03.png" alt="images">
+											</picture>
+										</div>
+										<h2 class="article__tittle">
+											Темная шапка для Youtube в формате PSD
+										</h2>
+										<div class="article__footer">
+											<div class="article__wrapper-rating">
+												<h3 class="rating-tittle">Рейтинг</h3>
+												<div class="article__rating rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">3</div>
+												</div>
+											</div>
+											<div class="article__button">
+												<button type="button" class="btn-firm">Подробнее</button>
+											</div>
+										</div>
+									</div>
+
+								</article>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<!-- Оболонка слайдера -->
+				<div class="articles__slider articles swiper">
+					<!-- Часть движущегося ползунка -->
+					<h2 class="swiper-tittle">Мы рекомендуем</h2>
+					<div class="articles__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="articles__slide swiper-slide">
+							<article class="pattern__article article">
+								<div class="article__body">
+									<div class="article__images">
+										<picture>
+											<source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.png"
+												alt="images">
+										</picture>
+									</div>
+									<h2 class="article__tittle">
+										Темная шапка для Youtube в формате PSD
+									</h2>
+									<div class="article__footer">
+										<div class="bottom-covers__star star">
+											<img class="star__images" src="img/icon/01.svg" alt="star">
+											<span class="star__number">5</span>
+										</div>
+										<div class="article__wrapper-rating">
+											<h3 class="rating-tittle">Рейтинг</h3>
+											<div class="article__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3</div>
+											</div>
+										</div>
+										<div class="article-covers">
+											<img src="img/icon/comment.svg" alt="icon">
+											<span class="item-coment__number">0</span>
+										</div>
+										<div class="article__button">
+											<button type="button" class="btn-firm">Подробнее</button>
+										</div>
+									</div>
+								</div>
+							</article>
+
+						</div>
+						<div class="articles__slide swiper-slide">
+							<article class="pattern__article article">
+								<div class="article__body">
+									<div class="article__images">
+										<picture>
+											<source srcset="img/slider/02.webp" type="image/webp"><img src="img/slider/02.png"
+												alt="images">
+										</picture>
+									</div>
+									<h2 class="article__tittle">
+										Темная шапка для Youtube в формате PSD
+									</h2>
+									<div class="article__footer">
+										<div class="bottom-covers__star star">
+											<img class="star__images" src="img/icon/01.svg" alt="star">
+											<span class="star__number">5</span>
+										</div>
+										<div class="article__wrapper-rating">
+											<h3 class="rating-tittle">Рейтинг</h3>
+											<div class="article__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3</div>
+											</div>
+										</div>
+										<div class="article-covers">
+											<img src="img/icon/comment.svg" alt="icon">
+											<span class="item-coment__number">0</span>
+										</div>
+										<div class="article__button">
+											<button type="button" class="btn-firm">Подробнее</button>
+										</div>
+									</div>
+								</div>
+							</article>
+
+						</div>
+						<div class="articles__slide swiper-slide">
+							<article class="pattern__article article">
+								<div class="article__body">
+									<div class="article__images">
+										<picture>
+											<source srcset="img/slider/01.webp" type="image/webp"><img src="img/slider/01.png"
+												alt="images">
+										</picture>
+									</div>
+									<h2 class="article__tittle">
+										Темная шапка для Youtube в формате PSD
+									</h2>
+									<div class="article__footer">
+										<div class="bottom-covers__star star">
+											<img class="star__images" src="img/icon/01.svg" alt="star">
+											<span class="star__number">5</span>
+										</div>
+										<div class="article__wrapper-rating">
+											<h3 class="rating-tittle">Рейтинг</h3>
+											<div class="article__rating rating rating_set">
+												<div class="rating__body">
+													<div class="rating__active"></div>
+													<div class="rating__items">
+														<input type="radio" class="rating__item" value="1" name="rating">
+														<input type="radio" class="rating__item" value="2" name="rating">
+														<input type="radio" class="rating__item" value="3" name="rating">
+														<input type="radio" class="rating__item" value="4" name="rating">
+														<input type="radio" class="rating__item" value="5" name="rating">
+													</div>
+												</div>
+												<div class="rating__value">3</div>
+											</div>
+										</div>
+										<div class="article-covers">
+											<img src="img/icon/comment.svg" alt="icon">
+											<span class="item-coment__number">0</span>
+										</div>
+										<div class="article__button">
+											<button type="button" class="btn-firm">Подробнее</button>
+										</div>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</div>
+					<!-- Якщо потрібна пагінація -->
+					<div class="pagination-article ">
+
+					</div>
+					<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__colum contact-footer">
+						<div data-da=".footer__container,767.98,first" class="contact-footer__body">
+							<img class="contact-footer__images" src="img/footer/logo.svg" alt="logo">
+							<div class="contact-footer__sochial">
+								<a href="#"> <img src="img/footer/VK.svg" alt="vk"></a>
+								<a href=""> <img src="img/footer/E-mail.svg" alt="mail"></a>
+							</div>
+						</div>
+						<ul data-da=".footer__container,767.98,last" class="contact-footer__items">
+							<li class="contact-footer__list">
+								<a class="contact-footer__link icon-adress" href="#">
+									<img src="img/footer/01.svg" alt="icon">
+									<address>Art-ps.ru, 2021</address>
+								</a>
+							</li>
+							<li class="contact-footer__list">
+								<a class="contact-footer__link" href="#">Пользовательское соглашение </a>
+							</li>
+							<li class="contact-footer__list">
+								<a class="contact-footer__link" href="#">Дизайн - Nikita Khmel</a>
+							</li>
+						</ul>
+					</div>
+					<div data-da=".footer__body, 479.98,1" data-spollers="479.98,max"
+						class="footer__colum material-footer  spollers">
+						<div class="material-footer__body spollers__item">
+							<button data-spoller class="material-footer__tittle spollers__title">Наши материалы</button>
+							<ul class="material-footer__items">
+								<li class="material-footer__list">
+									<a class="material-footer__link" href="#">Все для Photoshop</a>
+								</li>
+								<li class="material-footer__list">
+									<a class="material-footer__link" href="#">Все для Дизайнера</a>
+								</li>
+								<li class="material-footer__list">
+									<a class="material-footer__link" href="#">PSD материалы</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div data-da=".footer__body, 767.98,1" data-spollers="479.98,max"
+						class="footer__colum menu-footer spollers ">
+						<div class="menu-footer__items spollers__item">
+							<button data-spoller class="menu-footer__tittle spollers__title">Меню</button>
+							<ul class="menu-footer__body">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Форум
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Скоро откроем
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Заказ графики
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">
+										Устные уроки
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">
+										Видео уроки
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Конкурсы
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Вакансии
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Файлы
+									</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">
+										Реклама
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div data-da=".footer__body, 479.98,1" class="footer__colum statistics-footer">
+						<h4 class="statistics-footer__tittle">Наша статистика</h4>
+						<div class="statistics-footer__top">
+							<p class="statistics-footer__text">С нами уже</p>
+							<div class="statistics-footer__number">1085</div>
+							<p class="statistics-footer__text">С пользователей!</p>
+						</div>
+						<div class="statistics-footer__bottom">
+							<div class="statistics-footer__today">
+								<p class="statistics-footer__text">Сегодня:</p>
+								<span>4</span>
+							</div>
+							<div class="statistics-footer__online">
+								<p class="statistics-footer__text">Онлайн::</p>
+								<span>2</span>
+							</div>
+							<div class="statistics-footer__guests">
+								<p class="statistics-footer__text">Гостей::</p>
+								<span>1</span>
+							</div>
+							<div class="statistics-footer__users">
+								<p class="statistics-footer__text">Пользователей::</p>
+								<span>1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Стилі для body -->
+
+	<script src="js/app.min.js?_v=20230508195128"></script>
+	<script src="https://cdn.jsdelivr.net/npm/datalist-css/dist/datalist-css.min.js?_v=20230508195128"></script>
+	<script src="js/suggestions.js"></script>
+	<script src="js/script.js"></script>
+</body>
+<!-- Оболонка слайдера -->
